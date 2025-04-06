@@ -1,0 +1,92 @@
+.image-container {
+    height: 276px;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    padding: 15px 15px 25px 15px;
+    background-color: #d8e4c3;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px;
+}
+.mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+.image-container .cssBox{
+    display: block;
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.form-check-input{
+    margin-left: 0px !important;
+}
+.btn-primary.disabled, .btn-primary:disabled {
+    color: #000;
+    background-color: #bcbcbc;
+    border-color: #bcbcbc;
+}
+.btn-primary {
+    color: #000;
+    background-color: #86bc25;
+    border-color: #86bc25;
+    padding: 3px 45px;
+}
+
+.cssBox {
+    position: relative;
+}
+.cssBox input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+}
+.cssBox input[type="checkbox"]:checked {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 15px;
+    height: 15px;
+    border: none;
+    background-image: url(../images/checkbox_img.jpg);
+    cursor: pointer;
+}
+
+.cssBox label {
+    cursor: pointer;
+}
+
+.cssBox label img {
+    border: 2px solid transparent;
+    transition: border-color 0.5s ease-in-out;
+}
+
+.cssBox input[type="checkbox"]:checked + label img {
+    border-color: #007bff;
+}
+@media (max-width: 768px) {
+    .image-container {
+        height: auto;
+        margin: 10px;
+    }
+    .btn-primary{
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container {
+        height: auto;
+        margin: 5px;
+    }
+    .btn-primary{
+        width: 100%;
+    }
+    
+}
+

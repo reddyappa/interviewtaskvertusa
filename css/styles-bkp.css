@@ -1,0 +1,139 @@
+.image-container {
+    height: 220px;
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    padding: 15px 15px 25px 15px;
+    background-color: #d8e4c3;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px;
+}
+.mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+.image-container .cssBox{
+    display: block;
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-top: 2px;
+}
+.button1 {
+    background-color: #FF0000;
+    border: 4px;
+            border-radius: 20px 20px 20px 20px;
+            border-color:red;
+    color: yellow;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button1:hover {
+    background-color: green;
+}
+.button2 {
+    background-color: #FF00FF;
+}
+.form-check-input{
+    margin-left: 0px !important;
+}
+.btn-primary.disabled, .btn-primary:disabled {
+    color: #000;
+    background-color: #bcbcbc;
+    border-color: #bcbcbc;
+}
+.btn-primary {
+    color: #000;
+    background-color: #86bc25;
+    border-color: #86bc25;
+    padding: 3px 45px;
+}
+input[type=checkbox]:checked {
+    background-color: #86bc25 !important;
+    padding: 2px;
+}
+@media (max-width: 768px) {
+    .image-container {
+        height: auto;
+        margin: 10px;
+    }
+    .btn-primary{
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container {
+        height: auto;
+        margin: 5px;
+    }
+    .btn-primary{
+        width: 100%;
+    }
+}
+
+/* 
+# Grid Layout
+To create a grid layout, you can use the CSS Grid property. Here's an example:
+
+ */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.grid-item {
+    background-color: #ddd;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* Flex Layout
+To create a flex layout, you can use the CSS Flexbox property. Here's an example:
+ */
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-item {
+    background-color: #ddd;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 20px;
+}
+
+@media (max-width: 768px) {
+    .flex-item {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .flex-item {
+        margin: 5px;
+    }
+}

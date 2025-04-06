@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+
+function checkCheckboxes() {
+        var checkboxes = document.querySelectorAll('.form-check-input');
+        var submitButton = document.getElementById('submit-button');
+        var isChecked = false;
+
+        checkboxes.forEach(function(checkbox) {
+            if (checkbox.checked) {
+                isChecked = true;
+            }
+        });
+
+        if (isChecked) {
+            submitButton.disabled = false;
+        } else {
+            submitButton.disabled = true;
+        }
+    }
+
+
+    </script>
+
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="image-container">
+                    <img src="images/iron-man-2560x2494-infinity-gauntlet-hd-16412.jpg" alt="">
+                    <span class="cssBox">
+                        <input class="form-check-input" type="checkbox" id="checkbox1" onchange="checkCheckboxes()">
+                        
+                    </span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="image-container">
+                    <img src="images/Complex_eLearning_322W_322H.png" alt="">
+                    <span class="cssBox"><input class="form-check-input" type="checkbox" id="checkbox1" onchange="checkCheckboxes()"></span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="image-container">
+                    <img src="images/ELearning.png" alt="">
+                    <span class="cssBox"><input class="form-check-input" type="checkbox" id="checkbox1" onchange="checkCheckboxes()"></span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mb-4 mx-auto">
+                <div class="image-container">
+                    <img src="images/Medium_Complexity_E_Learning_322W_322H.png" alt="">
+                    <span class="cssBox"><input class="form-check-input" type="checkbox" id="checkbox1" onchange="checkCheckboxes()"></span>
+                </div>
+            </div>
+            <div class="col-lg-12" style="text-align: center;">
+                <button type="submit" id="submit-button" class="btn btn-primary" disabled>Submit</button>            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
